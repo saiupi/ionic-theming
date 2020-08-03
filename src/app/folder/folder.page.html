@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit(registerForm)">
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input type="Name" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="Email" formControlName="email" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Type of visit</ion-label>
+      <ion-select placeholder="Select One" formControlName="visit">
+        <ion-select-option value="m">Meeting</ion-select-option>
+        <ion-select-option value="d">Delivery</ion-select-option>
+        <ion-select-option value="p">Personal</ion-select-option>
+      </ion-select>   
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Person to visit</ion-label>
+      <ion-textarea type="Email"formControlName="pVisit"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date</ion-label>
+      <ion-input formControlName="date" [(ngModel)]="myDate"></ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label position="floating">Time of entry</ion-label>
+      <ion-input type="text" formControlName="entry"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Time of exit</ion-label>
+      <ion-input type="text" formControlName="exit" ></ion-input>
+    </ion-item>
+   
+    <ion-button shape="block"  (click)="submit()">Submit</ion-button>
+  </form>    
+</ion-content>
