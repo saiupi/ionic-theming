@@ -78,7 +78,7 @@
   /** gradient **/
   
   --ion-backgrund-color: linear-gradient(#455bd8,#2c8cb3) !important;
-  --ion-button-gradient: linear-gradient(#7B52AB , #522B83) !important;
+  --ion-button-gradient: linear-gradient(#455bd8,#2c8cb3) !important;
 }
 
 @media (prefers-color-scheme: dark) {
