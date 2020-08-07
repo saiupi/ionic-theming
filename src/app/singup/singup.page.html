@@ -1,9 +1,76 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
-    <ion-title>singup</ion-title>
+    <ion-title>login</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content>
+  <div class="clr">
 
+  </div>
+
+  <ion-card class="shadow-red">
+
+    <ion-card-content>
+      <ion-img src="assets\s.webp"></ion-img>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="1" class="UserNameIcon">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <ion-item>
+              <ion-input placeholder="user name"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1" class="UserNameIcon">
+            <ion-icon name="key-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <ion-item>
+              <ion-input placeholder="password"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1" class="UserNameIcon">
+            <ion-icon name="cell"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <ion-item>
+              <ion-input placeholder="mobile"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="1" class="UserNameIcon">
+            <ion-icon name="mail-unread-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <ion-item>
+              <ion-input placeholder="email"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <div align="center">
+    <ion-button type="submit" shape="round" class="button-gradient">
+      <p>SUBMIT</p>
+    </ion-button>
+
+  </div>
+  <div (click)="goToBack()" class="goToBack">
+    <ion-button shape="round" fill="outline">BACK</ion-button>
+
+  </div>
 </ion-content>
+
+<ion-footer>
+  <div class="clrFooter">
+
+  </div>
+</ion-footer>

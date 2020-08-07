@@ -9,7 +9,7 @@
 
   </div>
 
-  <ion-card>
+  <ion-card class="shadow-red">
 
     <ion-card-content>
       <ion-img src="assets\s.webp"></ion-img>
@@ -37,7 +37,7 @@
       </ion-grid>
     </ion-card-content>
   </ion-card>
-  <div align="center">
+  <div align="center" (click)="goToDashBoard()">
     <ion-button type="submit" shape="round" class="button-gradient">
       <p>LOG IN</p>
     </ion-button>
@@ -48,7 +48,7 @@
 
   </div>
   <div align="center">
-    <ion-button fill="clear">sign up</ion-button>
+    <ion-button fill="clear" (click)="submit()">sign up</ion-button>
 
   </div>
 </ion-content>

@@ -1,12 +1,12 @@
 .clr{
     width: 100%;
     height:60px;
-    background-color: var(--ion-color-light);
+    background: var(--ion-color-medium);
 }
 .clrFooter{
     width: 100%;
     height:70px;
-    background-color: var(--ion-color-light);
+    background: var(--ion-color-medium);
 }
 .UserNameIcon{
     margin-top: 20px;
@@ -15,20 +15,34 @@
 
 }
 ion-card{
-    border-radius: 30px;
+    border-radius: 20px;
     margin-top: -20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
 ion-img{
     height: 80px;
     // width: 55px;
     
-}.button-gradient{
+}
+.button-gradient{
     --background: var(--ion-button-gradient);
-    width: 165px;
-    height: 40px;
-
-   
+    width: 188px;
+    height: 50px;
+    margin-top: 20px;  
 }
 .account{
  margin-top: 15px;
+}
+.card-content-md { 
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.shadow-red{
+    box-shadow: 0px 14px 25px #edeff096;
+    border-radius: 20px;
 }
