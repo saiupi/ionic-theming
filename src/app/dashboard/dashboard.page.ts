@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +9,7 @@ import { MenuController } from '@ionic/angular';
 })
 export class DashboardPage implements OnInit {
 
-  constructor(private menuCtrl:MenuController) {
+  constructor(private menuCtrl:MenuController,private router: Router) {
     this.menuCtrl.enable(true); // or true 
    }
 
@@ -19,5 +20,9 @@ export class DashboardPage implements OnInit {
     delay: 1500
     }
   };
+  submit(){
+    this.router.navigate(['/login']);
+
+  }
 
 }

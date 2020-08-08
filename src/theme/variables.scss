@@ -28,7 +28,7 @@
   --ion-color-tertiary-tint: #6370ff;
 
   /** success **/
-  --ion-color-success: #2dd36f;
+  --ion-color-success: #cf40c8;
   --ion-color-success-rgb: 45, 211, 111;
   --ion-color-success-contrast: #ffffff;
   --ion-color-success-contrast-rgb: 255, 255, 255;
@@ -80,12 +80,24 @@
   --ion-backgrund-color:linear-gradient(-90deg, red, yellow)!important;
   --ion-button-gradient: linear-gradient(-90deg,#697ce9,#f06beb) !important;
 }
+// ion-toolbar
 ion-toolbar{
   --background: var(--ion-color-medium);
   --color:var(--ion-color-light);
 
 
 }
+// ion-card
+ion-card{
+  box-shadow: 0px 14px 25px #edeff096;
+  border-radius: 20px;
+}
+// ion-note
+ion-note{
+  --color:var(--ion-color-dark-tint);
+
+}
+
 
 @media (prefers-color-scheme: dark) {
   /*
