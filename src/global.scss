@@ -24,3 +24,12 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+ion-split-pane{ 
+    --border: none !important;
+    ion-menu{
+     --background: var(--ion-color-medium) !important; 
+        ion-content{            
+            --background: var(--ion-color-medium) !important; 
+        }
+    }
+}

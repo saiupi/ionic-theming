@@ -117,3 +117,15 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+.avatars{
+  //margin: auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+ion-list {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
