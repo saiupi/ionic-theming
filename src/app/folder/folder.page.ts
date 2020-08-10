@@ -48,7 +48,7 @@ export class FolderPage implements OnInit {
       }
     };
     
-    this.router.navigate(['/home'],navigationExtras);
+    //this.router.navigate(['/home'],navigationExtras);
   }
   
 }

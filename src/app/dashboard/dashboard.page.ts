@@ -10,19 +10,30 @@ import { Router } from '@angular/router';
 export class DashboardPage implements OnInit {
 
   constructor(private menuCtrl:MenuController,private router: Router) {
-    this.menuCtrl.enable(true); // or true 
    }
 
   ngOnInit() {
+    this.menuCtrl.enable(true); // or true 
+
   }
+  
   slideOpts = {
     autoplay: {
     delay: 1500
     }
   };
-  submit(){
+  login(){
     this.router.navigate(['/login']);
 
   }
+  upload(){
+    this.router.navigate(['/photo-upload']);
+ 
+  }
+  registor(){
+    this.router.navigate(['/persons-registor']);
+ 
+  }
+  
 
 }

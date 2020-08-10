@@ -16,10 +16,10 @@ const routes: Routes = [
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
-  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
+  // {
+  //   path: 'home',
+  //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  // },
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
@@ -31,7 +31,20 @@ const routes: Routes = [
   {
     path: 'dashboard',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'photo-upload',
+    loadChildren: () => import('./school/photo-upload/photo-upload.module').then( m => m.PhotoUploadPageModule)
+  },
+  {
+    path: 'persons-registor',
+    loadChildren: () => import('./school/persons-registor/persons-registor.module').then( m => m.PersonsRegistorPageModule)
+  },
+  {
+    path: 'childrens',
+    loadChildren: () => import('./school/childrens/childrens.module').then( m => m.ChildrensPageModule)
   }
+
 
 ];
 
