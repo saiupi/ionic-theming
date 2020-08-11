@@ -7,39 +7,42 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-    <form>
-      <ion-item>
-        <ion-label position="floating">Name</ion-label>
-        <ion-input type="Name"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">MobileNumber</ion-label>
-        <ion-input type="mobile"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label>Type of visit</ion-label>
-        <ion-select placeholder="Select One">
-          <ion-select-option value="s">student</ion-select-option>
-          <ion-select-option value="d">mangement</ion-select-option>
-          <ion-select-option value="w">worker</ion-select-option>
-          <ion-select-option value="d">diver</ion-select-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <ion-label>Type of Gender</ion-label>
-        <ion-select placeholder="Select One">
-          <ion-select-option value="m">male</ion-select-option>
-          <ion-select-option value="f">fe-male</ion-select-option>
-         
-        </ion-select>
-      </ion-item>
-      <ion-item>
-        <!-- <ion-label position="floating">Date of birthday</ion-label> -->
-        <ion-input type="date"></ion-input>
-      </ion-item>
+  <ion-card>
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input type="Name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">MobileNumber</ion-label>
+          <ion-input type="mobile"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Type of visit</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="s">student</ion-select-option>
+            <ion-select-option value="d">mangement</ion-select-option>
+            <ion-select-option value="w">worker</ion-select-option>
+            <ion-select-option value="d">diver</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Type of Gender</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="m">male</ion-select-option>
+            <ion-select-option value="f">fe-male</ion-select-option>
 
-      <ion-button  (click)="submit()"  shape="round" expand="full" class="button-gradient">Submit</ion-button>
-    </form>
-  
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <!-- <ion-label position="floating">Date of birthday</ion-label> -->
+          <ion-input type="date"></ion-input>
+        </ion-item>
+
+        <ion-button (click)="submit()" shape="round" expand="full" class="button-gradient">Submit</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

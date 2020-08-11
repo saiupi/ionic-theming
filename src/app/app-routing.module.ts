@@ -43,7 +43,23 @@ const routes: Routes = [
   {
     path: 'childrens',
     loadChildren: () => import('./school/childrens/childrens.module').then( m => m.ChildrensPageModule)
+  },  {
+    path: 'childrens-list',
+    loadChildren: () => import('./school/childrens-list/childrens-list.module').then( m => m.ChildrensListPageModule)
+  },
+  {
+    path: 'workers-list',
+    loadChildren: () => import('./school/workers-list/workers-list.module').then( m => m.WorkersListPageModule)
+  },
+  {
+    path: 'management-list',
+    loadChildren: () => import('./school/management-list/management-list.module').then( m => m.ManagementListPageModule)
+  },
+  {
+    path: 'divers-list',
+    loadChildren: () => import('./school/divers-list/divers-list.module').then( m => m.DiversListPageModule)
   }
+
 
 
 ];

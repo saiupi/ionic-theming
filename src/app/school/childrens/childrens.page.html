@@ -1,13 +1,58 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>childrens</ion-title>
+    <ion-title>Childrens Registor</ion-title>
     <ion-buttons slot="start">
       <ion-back-button defaultHref="dashboard"></ion-back-button>
-
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
+  <ion-card>
+    <ion-card-content>
+      <form>
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Father Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Mother Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">MobileNumber</ion-label>
+          <ion-input type="mobile"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Type of class</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="f">first class</ion-select-option>
+            <ion-select-option value="s">second class</ion-select-option>
+           
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Type of Gender</ion-label>
+          <ion-select placeholder="Select One" class="ion-text-wrap">
+            <ion-select-option value="m">male</ion-select-option>
+            <ion-select-option value="f">fe-male</ion-select-option>
+
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <!-- <ion-label position="floating">Date of birthday</ion-label> -->
+          <ion-input type="date"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="file"></ion-input>
+        </ion-item>
+
+        <ion-button (click)="submit()" shape="round" expand="full" class="button-gradient">Submit</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

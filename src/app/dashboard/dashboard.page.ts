@@ -22,6 +22,18 @@ export class DashboardPage implements OnInit {
     delay: 1500
     }
   };
+  public appPages = [
+    {
+      title: 'childrens',
+      url: 'childrens',
+      icon: 'mail'
+    },
+    {
+      title: 'Outbox',
+      url: 'singup',
+      icon: 'paper-plane'
+    },
+  ]
   login(){
     this.router.navigate(['/login']);
 
