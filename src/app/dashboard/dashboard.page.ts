@@ -22,18 +22,7 @@ export class DashboardPage implements OnInit {
     delay: 1500
     }
   };
-  public appPages = [
-    {
-      title: 'childrens',
-      url: 'childrens',
-      icon: 'mail'
-    },
-    {
-      title: 'Outbox',
-      url: 'singup',
-      icon: 'paper-plane'
-    },
-  ]
+  
   login(){
     this.router.navigate(['/login']);
 
@@ -44,7 +33,23 @@ export class DashboardPage implements OnInit {
   }
   registor(){
     this.router.navigate(['/persons-registor']);
- 
+  }
+  childern(){
+    this.router.navigate(['/childrens-list']);
+
+  }
+  mangement(){
+    
+    this.router.navigate(['/management-list']);
+
+  }
+  workers(){
+    this.router.navigate(['/workers-list']);
+
+  }
+  diver(){
+    this.router.navigate(['/divers-list']);
+
   }
   
 
