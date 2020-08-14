@@ -59,7 +59,11 @@ const routes: Routes = [
   {
     path: 'divers-list',
     loadChildren: () => import('./school/divers-list/divers-list.module').then( m => m.DiversListPageModule)
+  },  {
+    path: 'view-list-modal',
+    loadChildren: () => import('./modalWindow/view-list-modal/view-list-modal.module').then( m => m.ViewListModalPageModule)
   }
+
 
 
 
