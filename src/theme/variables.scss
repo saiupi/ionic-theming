@@ -107,7 +107,15 @@ ion-footer{
   height:70px;
 
 }
+ion-label{
+  font-family: 'San Fransico';
+  --color:var(--ion-color-medium);
+}
 
+
+* {
+  font-family: 'San Fransico';
+}
 
 @media (prefers-color-scheme: dark) {
   /*
